@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\AndroidStudio\\CityNet\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ease_default_avatar.png",
+        "source": "E:\\AndroidStudio\\CityNet\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ease_default_avatar.png"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\CityNet\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\back.png",
+        "source": "E:\\AndroidStudio\\CityNet\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\back.png"
+    },
+    {
+        "merged": "E:\\AndroidStudio\\CityNet\\easeui\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "E:\\AndroidStudio\\CityNet\\easeui\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_launcher.png"
+    }
+]

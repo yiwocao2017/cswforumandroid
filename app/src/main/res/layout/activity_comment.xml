@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/intervalColor"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/txt_cancel"
+                android:text="取消"
+                android:textSize="13sp"
+                android:textColor="@color/font_gray"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/font_gray"
+                android:text="发布评论"
+                android:gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/txt_confirm"
+                android:text="发布"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="@color/font_gray"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/lineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <EditText
+                android:id="@+id/edt_comment"
+                android:hint="写评论..."
+                android:background="@null"
+                android:textColor="@color/font_gray"
+                android:textColorHint="@color/font_gray_999999"
+                android:padding="15dp"
+                android:gravity="top"
+                android:textSize="14sp"
+                android:maxLength="100"
+                android:maxLines="4"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_textNum"
+                    android:textColor="@color/font_gray"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/font_gray_999999"
+                    android:text="/100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/lineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <LinearLayout
+            android:background="@color/intervalColor"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <LinearLayout
+                android:id="@+id/layout_call"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text=" @"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_emoji"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="^_^"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/lineColor"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_emojis"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_emojis"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/layout_indicator"
+                android:layout_below="@+id/viewpager_emojis"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:id="@+id/txt_indicator1"
+                    android:background="@drawable/corners_indicator_orange"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+
+                <TextView
+                    android:id="@+id/txt_indicator2"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/corners_indicator_gray"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+
+                <TextView
+                    android:id="@+id/txt_indicator3"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/corners_indicator_gray"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+
+                <TextView
+                    android:id="@+id/txt_indicator4"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/corners_indicator_gray"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+
+                <TextView
+                    android:id="@+id/txt_indicator5"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/corners_indicator_gray"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+
+                <TextView
+                    android:id="@+id/txt_indicator6"
+                    android:visibility="gone"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/corners_indicator_gray"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

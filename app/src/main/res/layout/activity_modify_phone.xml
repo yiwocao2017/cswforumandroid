@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/intervalColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/red" >
+
+        <LinearLayout
+            android:id="@+id/layout_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:background="@mipmap/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="修改手机号"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@drawable/corners_sign_edt_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/sign_user"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_user"
+            android:hint="请输入手机号码"
+            android:background="@null"
+            android:textSize="14sp"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="#bbbbbb"
+            android:textColorHint="#bbbbbb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/lineColor"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:background="@drawable/corners_sign_edt_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/sign_code"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_code"
+            android:hint="请输入验证码"
+            android:textSize="14sp"
+            android:maxLength="4"
+            android:background="@null"
+            android:inputType="number"
+            android:textColor="#bbbbbb"
+            android:textColorHint="#bbbbbb"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/btn_send"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="获取验证码"
+            android:background="@drawable/corners_sign"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_confirm"
+        android:gravity="center"
+        android:text="修改"
+        android:textSize="16sp"
+        android:textColor="@color/font_white"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/corners_sign"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+</LinearLayout>

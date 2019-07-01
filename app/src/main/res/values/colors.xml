@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d23e3e</color>
+    <color name="colorPrimaryDark">#d23e3e</color>
+    <color name="colorAccent">#d23e3e</color>
+
+    <color name="lineColor">#dcdcdc</color>
+    <color name="intervalColor">#f0f0f0</color>
+
+    <color name="font_gray_707070">#707070</color>
+    <color name="font_gray_333333">#333333</color>
+    <color name="font_gray_666666">#666666</color>
+    <color name="font_gray_999999">#999999</color>
+    <color name="font_gray_b4b4b4">#b4b4b4</color>
+    <color name="font_gray_e49d9e">#e49d9e</color>
+    <color name="font_gray">#464646</color>
+    <color name="font_black">#000000</color>
+    <color name="font_white">#ffffff</color>
+    <color name="font_red">#d23e3e</color>
+    <color name="font_red_dark">#7d0000</color>
+    <color name="font_green">#8BCBB0</color>
+    <color name="font_yellow">#FAA614</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="red">#d23e3e</color>
+
+</resources>

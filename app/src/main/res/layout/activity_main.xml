@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <FrameLayout
+        android:id="@+id/layout_fragment"
+        android:layout_marginBottom="52dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_news"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp">
+
+            <View
+                android:layout_gravity="top"
+                android:background="@color/lineColor"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_news"
+                    android:src="@mipmap/news_red"
+                    android:layout_width="21dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/txt_news"
+                    android:layout_marginTop="4dp"
+                    android:textSize="10sp"
+                    android:text="头条"
+                    android:textColor="@color/font_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_forum"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp">
+
+            <View
+                android:background="@color/lineColor"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_forum"
+                    android:src="@mipmap/forum_gray"
+                    android:layout_width="21dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/txt_forum"
+                    android:textColor="@color/font_gray_707070"
+                    android:layout_marginTop="4dp"
+                    android:textSize="10sp"
+                    android:text="有料"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_bee"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="70dp">
+
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <View
+                    android:background="@color/lineColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_bee"
+                android:layout_marginBottom="6dp"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/bee"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_vidio"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp">
+
+            <View
+                android:background="@color/lineColor"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_vidio"
+                    android:src="@mipmap/vidio_gray"
+                    android:layout_width="21dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/txt_vidio"
+                    android:textColor="@color/font_gray_707070"
+                    android:layout_marginTop="4dp"
+                    android:textSize="10sp"
+                    android:text="视频"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_my"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="52dp">
+
+            <View
+                android:background="@color/lineColor"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_my"
+                        android:src="@mipmap/my_gray"
+                        android:layout_width="21dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/txt_my"
+                        android:textColor="@color/font_gray_707070"
+                        android:layout_marginTop="4dp"
+                        android:textSize="10sp"
+                        android:text="我的"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_unread"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="1"
+                    android:textSize="10sp"
+                    android:textColor="@color/font_white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/corners_unread"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

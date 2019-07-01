@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_recommended"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@color/lineColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="推荐站点"
+                    android:textColor="@color/font_gray"
+                    android:textSize="14sp"
+                    android:background="@color/intervalColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_hots"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_none"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="暂无"
+                android:textSize="14sp"
+                android:textColor="@color/font_gray" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="当前站点"
+            android:textColor="@color/font_gray"
+            android:textSize="14sp"
+            android:background="@color/intervalColor"
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="乐清城市网"
+            android:textSize="14sp"
+            android:textColor="@color/font_gray" />
+    </LinearLayout>
+
+</LinearLayout>
